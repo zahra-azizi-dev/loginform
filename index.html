@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet/out.css">
+
+
+</head>
+
+<body class="bg-[#e95f30] min-h-screen flex justify-center items-center relative cursor-none">
+    <div class="box pt-10 px-8 bg-amber-50 w-[400px] h-[420px] flex flex-col gap-10 z-10 relative ">
+        <div class="relative w-full pt-8 px-7">
+            <input type="text"
+                class="w-full bg-transparent border-b border-black/40 py-2 pl-8 outline-none text-sm peer">
+            <label for=""
+                class="absolute left-7 top-1/2 -translate-y-1/2 pl-6 text-black/60 transition-all duration-300">username</label>
+            <i class="fa-solid fa-user absolute left-7 top-1/2 -translate-y-1/2 text-black/60"></i>
+
+
+        </div>
+        <div class="relative w-full pt-8 px-7">
+            <input type="password"
+                class="w-full bg-transparent border-b border-black/40 py-2 pl-8 outline-none text-sm peer">
+            <label for=""
+                class="absolute left-7 top-1/2 -translate-y-1/2 pl-8 text-black/60 transition-all duration-300 ">password</label>
+            <i class="fa-solid fa-lock absolute left-7 top-1/2 -translate-y-1/2 text-black/60"></i>
+
+
+        </div>
+        <div class="absolute -top-12 left-22 w-9 h-24 bg-[#4d4449] rounded-full transition-all transition-transform z-30 duration-500 origin-bottom-right"
+            id="hanlf">
+        </div>
+        <div class="absolute -top-12 right-22 w-9 h-24 bg-[#4d4449] rounded-full transition-transform duration-500  z-30 origin-bottom-left"
+            id="hanri">
+        </div>
+
+
+        <button class="bg-[#e95f30] w-[120px] h-[50px] mx-auto flex justify-center items-center">login</button>
+        <a href="" class="text-center py-1" id="ale">forgot your password?</a>
+        <div class="bckg absolute left-1/2 -top-14 -translate-x-1/2 z-20 pointer-events-none">
+            <div class="panda  w-[160px] h-[160px] relative ">
+                <div class="err absolute -top-20 left-6 w-10 h-10 bg-[#4d4449] rounded-full"></div>
+                <div class="erre absolute -top-20 right-6 w-10 h-10 bg-[#4d4449] rounded-full"></div>
+                <div
+                    class=" face absolute top-[-60px] left-1/2 -translate-x-1/2 h-[120px] w-[135px] bg-white rounded-[120px_120px_90px_90px]">
+                    <div
+                        class="eye absolute top-8 left-7 w-6 h-8 bg-[#4d4449] rounded-full flex items-center justify-center">
+                        <span class="w-2 h-2 bg-white rounded-full absolute" id="left"></span>
+
+                    </div>
+                    <div
+                        class="eye absolute top-8 right-7 w-6 h-8 bg-[#4d4449] rounded-full flex items-center justify-center">
+                        <span class="w-2 h-2 bg-white rounded-full absolute" id="right"></span>
+                    </div>
+                    <div class="absolute top-16 left-4 w-6 h-4 bg-pink-400/60 rounded-full blur-[1px]"></div>
+                    <div class="absolute top-16 right-4 w-6 h-4 bg-pink-400/60 rounded-full blur-[1px]"></div>
+
+                </div>
+                <div class="nose absolute top-0 left-1/2 -translate-x-1/2  w-5 h-4 bg-[#4d4449] rounded-[50%]">
+                    <div class="line"></div>
+                </div>
+                <div class="absolute top-2 left-1/2 -translate-x-1/2 w-8 h-6">
+                    <div class="absolute left-0 w-4 h-6 border-b-2 border-[#4d4449] rounded-b-full"></div>
+                    <div class="absolute right-0 w-4 h-6 border-b-2 border-[#4d4449] rounded-b-full"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- //// cursor//// -->
+    <div id="cursorPanda"
+        class="fixed top-0 left-0 w-10 h-9 pointer-events-none z-[9999] -translate-x-1/2 -translate-y-1/2">
+        <!-- ears -->
+        <div class="absolute -top-2 left-0 w-4 h-5 bg-[#4d4449] rounded-full"></div>
+        <div class="absolute -top-2 right-0 w-4 h-5 bg-[#4d4449] rounded-full"></div>
+
+        <!-- face -->
+        <div class="absolute inset-0 bg-white rounded-[120px_120px_90px_90px] shadow-sm"></div>
+
+        <!-- eyes -->
+        <div class="absolute top-2 left-1.5 w-3 h-3.5 bg-[#4d4449] rounded-full flex items-center justify-center">
+            <span class="w-1 h-1 bg-white rounded-full"></span>
+            <div
+                class="eyelid absolute top-0 left-0 w-full h-full bg-white origin-top scale-y-0 transition-transform duration-200">
+            </div>
+        </div>
+        <div class="absolute top-2 right-1.5 w-3 h-3.5 bg-[#4d4449] rounded-full flex items-center justify-center">
+            <span class="w-1 h-1 bg-white rounded-full"></span>
+            <div
+                class="eyelid absolute top-0 left-0 w-full h-full bg-white origin-top scale-y-0 transition-transform duration-200">
+            </div>
+        </div>
+
+        <!-- blush -->
+        <div class="absolute top-5 left-1 w-2 h-1 bg-pink-400/60 rounded-full blur-[0.5px]"></div>
+        <div class="absolute top-5 right-1 w-2 h-1 bg-pink-400/60 rounded-full blur-[0.5px]"></div>
+
+        <!-- nose -->
+        <div class="absolute top-5 left-1/2 -translate-x-1/2 w-2 h-1.5 bg-[#4d4449] rounded-full"></div>
+
+        <!-- mouth -->
+        <div class="absolute top-6 left-1/2 -translate-x-1/2 w-4 h-2">
+            <div class="absolute left-0 w-2 h-2 border-b-2 border-[#4d4449] rounded-b-full"></div>
+            <div class="absolute right-0 w-2 h-2 border-b-2 border-[#4d4449] rounded-b-full"></div>
+        </div>
+    </div>
+    <ul
+        class="rm w-[200px] absolute hidden flex justify-center items-center border border-black text-amber-800 *:bg-orange-400/60">
+        <li>forgot pass</li>
+        <li>username</li>
+        <li>panda</li>
+        <li>orange</li>
+    </ul>
+
+
+
+
+</body>
+<script>
+    const inputs = document.querySelectorAll('.box input')
+    const username = inputs[0]
+    const password = inputs[1]
+    const hanlf = document.getElementById('hanlf')
+    const hanri = document.getElementById('hanri')
+    const left = document.getElementById('left')
+    const right = document.getElementById('right')
+    const ale = document.getElementById('ale')
+    let cursorPanda = document.getElementById('cursorPanda')
+    const eyelid = document.querySelectorAll('.eyelid')
+    const rm = document.querySelector('.rm')
+
+    inputs.forEach((item) => {
+        item.addEventListener('focus', () => {
+            item.nextElementSibling.classList.add('-top-50', 'text-xs')
+        })
+        item.addEventListener('blur', () => {
+            if (item.value == '') {
+                item.nextElementSibling.classList.remove('-top-50', 'text-xs')
+            }
+        })
+    })
+    username.addEventListener('keyup', () => {
+        if (username.value.length >= 2 && username.value.length <= 3) {
+            left.style.left = '4px'
+            left.style.top = '14px'
+            right.style.left = '4px'
+            right.style.top = '14px'
+        } else if (username.value.length >= 4 && username.value.length <= 6) {
+            left.style.left = '6px'
+            left.style.top = '16px'
+            right.style.left = '6px'
+            right.style.top = '16px'
+
+        } else if (username.value.length >= 7 && username.value.length <= 9) {
+            left.style.left = '10px'
+            left.style.top = '24px'
+            right.style.left = '10px'
+            right.style.top = '24px'
+
+        } else if (username.value.length >= 10 && username.value.length <= 12) {
+            left.style.left = '16px'
+            left.style.top = '18px'
+            right.style.left = '16px'
+            right.style.top = '18px'
+
+        } else {
+            left.style.left = ''
+            left.style.top = ''
+            right.style.left = ''
+            right.style.top = ''
+        }
+    })
+    password.addEventListener('focus', () => {
+        hanlf.style.transform = 'translateX(10px) translateY(-26px) rotate(40deg)'
+        hanri.style.transform = 'translateX(-10px)  translateY(-26px) rotate(-40deg)'
+    })
+    password.addEventListener('blur', () => {
+        hanlf.style.transform = ''
+        hanri.style.transform = ''
+    })
+    window.addEventListener('mousemove', (e) => {
+        let x = e.clientX
+        Window.x = x
+        let y = e.clientY
+        Window.y = y
+        cursorPanda.style.top = y + 'px'
+        cursorPanda.style.left = x + 'px'
+
+
+    })
+
+
+    window.addEventListener('mousedown', () => {
+        eyelid.forEach(lid => {
+            lid.classList.remove('scale-y-0')
+            lid.classList.add('scale-y-100')
+
+
+
+        })
+    })
+    window.addEventListener('mouseup', () => {
+        eyelid.forEach(lid => {
+            lid.classList.remove('scale-y-100')
+            lid.classList.add('scale-y-0')
+
+
+        })
+    })
+    window.addEventListener('contextmenu', (e) => {
+        e.preventDefault()
+
+        rm.style.display = 'block'
+        rm.style.top = e.clientY + 'px'
+        rm.style.left = e.clientX + 'px'
+    })
+    window.addEventListener('click', () => {
+        rm.style.display = 'none'
+    })
+
+
+
+</script>
+
+</html>
+<!-- npx @tailwindcss/cli -i ./src/stylesheet/master.css -o ./src/stylesheet/out.css --watch -->
